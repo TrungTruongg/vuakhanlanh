@@ -1,38 +1,74 @@
 import { useState } from "react";
 
 const faqs = [
-  { q: "Khăn lạnh Vua Khăn Lạnh có an toàn cho da nhạy cảm không?", a: "Có. Tất cả sản phẩm đều được sản xuất từ nguyên liệu chất lượng, không gây kích ứng da và tuân thủ các tiêu chuẩn an toàn. Sản phẩm được bổ sung hoạt chất GLYCERIN giúp dưỡng ẩm và chăm sóc da tối ưu." },
-  { q: "Khăn lạnh được sản xuất từ nguyên liệu gì?", a: "Khăn lạnh được tạo ra với hơn 99,5% nước tinh khiết qua hệ thống RO, kết hợp hương liệu tự nhiên, chất bảo quản an toàn và hoạt chất GLYCERIN dưỡng ẩm. Chất liệu vải bi hoặc giấy Mỹ chất lượng cao." },
-  { q: "Vua Khăn Lạnh có hỗ trợ in logo thương hiệu không?", a: "Có. Chúng tôi cung cấp dịch vụ thiết kế và in logo thương hiệu trực tiếp trên bao bì khăn lạnh, giúp doanh nghiệp nâng tầm nhận diện thương hiệu." },
-  { q: "Đặt hàng số lượng lớn có được ưu đãi gì?", a: "Quý khách đặt số lượng lớn sẽ được hưởng chiết khấu hấp dẫn, hỗ trợ vận chuyển trên toàn quốc và chính sách đổi trả linh hoạt cho các sản phẩm lỗi." },
-  { q: "Thời gian giao hàng mất bao lâu?", a: "Đơn hàng lưu kho sẽ được giao trong 1-3 ngày. Đơn hàng sản xuất theo yêu cầu (in logo, kích thước đặc biệt) sẽ cần 5-7 ngày tùy thuộc vào số lượng." },
+  {
+    q: "Đặt may đồng phục số lượng ít có nhận không?",
+    a: "Có. Xưởng nhận may từ số lượng nhỏ (10-20 bộ) cho quán ăn, cửa hàng nhỏ đến số lượng lớn (hàng nghìn bộ) cho chuỗi nhà hàng, khách sạn hoặc doanh nghiệp. Số lượng càng lớn, chi phí trên mỗi bộ càng tối ưu.",
+  },
+  {
+    q: "Đồng phục được may từ chất liệu vải gì?",
+    a: "Tùy theo mục đích sử dụng, chúng tôi tư vấn chất liệu phù hợp: Kate, Kaki cho đồng phục văn phòng thoáng mát, Cotton 4 chiều co giãn cho đồng phục bếp - phục vụ, hoặc vải Thun cá sấu cho đồng phục thể thao, sự kiện. Toàn bộ vải đều được kiểm định về độ bền màu và độ thấm hút trước khi đưa vào sản xuất.",
+  },
+  {
+    q: "Có hỗ trợ thiết kế và in - thêu logo thương hiệu không?",
+    a: "Có. Đội ngũ thiết kế hỗ trợ tư vấn mẫu, phối màu theo bộ nhận diện thương hiệu và thực hiện in hoặc thêu logo trực tiếp lên đồng phục, đảm bảo sắc nét, bền màu qua nhiều lần giặt.",
+  },
+  {
+    q: "Không biết size thì có được đo tận nơi không?",
+    a: "Có. Với đơn hàng từ số lượng nhất định, đội ngũ có thể đến đo size trực tiếp tại cơ sở của quý khách. Nếu không tiện đo tận nơi, chúng tôi cung cấp bảng size mẫu (S–XXL) và sản xuất theo số đo quý khách gửi.",
+  },
+  {
+    q: "Thời gian may một đơn hàng mất bao lâu?",
+    a: "Đơn hàng may theo mẫu có sẵn: 5-7 ngày làm việc. Đơn hàng thiết kế mới hoàn toàn kèm in - thêu logo: 10-15 ngày tùy số lượng và độ phức tạp của thiết kế.",
+  },
+  {
+    q: "Vải đồng phục có bị phai màu hay co rút sau khi giặt không?",
+    a: "Vải được xử lý qua công đoạn giặt định hình (pre-shrink) và kiểm tra độ bền màu trước khi may, hạn chế tối đa tình trạng co rút hoặc phai màu khi giặt theo hướng dẫn sử dụng thông thường.",
+  },
+  {
+    q: "Đặt hàng số lượng lớn có được ưu đãi gì?",
+    a: "Quý khách đặt số lượng lớn hoặc ký hợp đồng dài hạn sẽ được hưởng chiết khấu theo bậc thang, hỗ trợ vận chuyển toàn quốc và chính sách bảo hành đường may trong thời gian quy định.",
+  },
+  {
+    q: "Có được đổi trả nếu đồng phục may sai size không?",
+    a: "Có. Nếu sản phẩm sai size hoặc lỗi kỹ thuật từ phía xưởng, quý khách được đổi hoặc chỉnh sửa miễn phí trong vòng 7 ngày kể từ ngày nhận hàng.",
+  },
 ];
 
-export default function FAQSection({bg = "bg-surface-mint"}) {
+export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className={`py-24 ${bg}`}>
-      <div className="max-w-300 mx-auto px-8">
+    <section className="py-24 px-margin-desktop overflow-hidden">
+      <div className="max-w-container-max mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-headline-xl font-headline-xl">Câu Hỏi Thường Gặp</h2>
+          <h2 className="font-display-lg text-display-lg mb-4 text-on-surface">
+            Câu Hỏi Thường Gặp
+          </h2>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, i) => (
-            <div key={faq.q} className="bg-white rounded-xl border border-border-subtle overflow-hidden">
+            <div
+              key={faq.q}
+              className="bg-white rounded-xl border border-border-subtle overflow-hidden"
+            >
               <button
                 className="w-full flex justify-between items-center p-6 text-left"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="font-headline-sm text-headline-sm pr-4">{faq.q}</span>
+                <span className="font-headline-sm text-headline-sm pr-4">
+                  {faq.q}
+                </span>
                 <span className="material-symbols-outlined text-primary shrink-0">
                   {openIndex === i ? "remove" : "add"}
                 </span>
               </button>
               {openIndex === i && (
                 <div className="px-6 pb-6">
-                  <p className="text-body-sm text-on-surface-variant">{faq.a}</p>
+                  <p className="text-body-sm text-on-surface-variant">
+                    {faq.a}
+                  </p>
                 </div>
               )}
             </div>

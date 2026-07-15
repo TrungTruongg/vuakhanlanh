@@ -1,11 +1,11 @@
 const details = [
   {
     id: 1,
-    name: "Khách đặt hàng trên các trang truyền thông của Vua Khăn Lạnh.",
+    name: "Khách đặt hàng trên các trang truyền thông của Aurix Uniforms.",
   },
   {
     id: 2,
-    name: "Lên lệnh sản xuất khăn lạnh sau khi nhận đơn.",
+    name: "Lên lệnh sản xuất đồng phục sau khi nhận đơn.",
   },
   {
     id: 3,
@@ -17,11 +17,11 @@ const details = [
   },
   {
     id: 5,
-    name: "In ấn bao bì theo yêu cầu, chỉnh sửa đến khi vừa ý.",
+    name: "Thiết kế mẫu, in - thêu logo theo yêu cầu, chỉnh sửa đến khi vừa ý.",
   },
   {
     id: 6,
-    name: "Sản xuất khăn lạnh theo quy trình chuẩn.",
+    name: "May đồng phục theo quy trình chuẩn.",
   },
 ];
 
@@ -37,8 +37,8 @@ const ManufactureProcessDetail = () => {
             Quy Trình Sản Xuất 9 Bước
           </h2>
           <p className="text-black text-justify mt-3 max-w-3xl mx-auto">
-            Công ty Vua Khăn Lạnh không chỉ chú trọng tạo sản phẩm hiệu quả mà
-            còn tuân thủ các tiêu chuẩn cao nhất về an toàn và vệ sinh.
+            Công ty Aurix Uniforms không chỉ chú trọng tạo ra sản phẩm hiệu quả mà
+            còn tuân thủ các tiêu chuẩn cao nhất về chất lượng và độ bền.
           </p>
         </div>
         <div className="space-y-0">

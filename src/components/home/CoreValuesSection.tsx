@@ -7,25 +7,25 @@ const values = [
 
 export default function CoreValuesSection() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-300 mx-auto px-8">
+    <section className="py-24 px-margin-desktop bg-white overflow-hidden">
+      <div className="max-w-container-max mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-headline-xl font-headline-xl mb-4">
+          <span className="font-display-lg text-display-lg text-primary">
             Nền Tảng Tạo Nên Thương Hiệu
-          </h2>
-          <p className="text-body-md text-on-surface-variant max-w-2xl mx-auto">
+          </span>
+          <p className="text-body-md text-on-surface-variant mt-3">
             Chúng tôi kết hợp sự cải tiến không ngừng với tinh thần trung thực để mang đến sản phẩm vượt trội.
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
           {values.map((v) => (
-            <div key={v.title} className="glass-card p-8 rounded-xl text-center">
-              <span className="material-symbols-outlined text-primary text-4xl mb-4">
+            <div key={v.title} className="step-card bg-surface-container-lowest border border-outline-variant p-8 transition-all hover:shadow-xl group">
+              <span className="material-symbols-outlined text-secondary font-bold w-12 h-12">
                 {v.icon}
               </span>
-              <h4 className="text-headline-sm font-headline-sm mb-2">{v.title}</h4>
-              <p className="text-body-sm text-on-surface-variant">{v.desc}</p>
+              <h3 className="font-headline-md text-headline-md mb-4">{v.title}</h3>
+              <p className="text-on-surface-variant mb-6">{v.desc}</p>
             </div>
           ))}
         </div>

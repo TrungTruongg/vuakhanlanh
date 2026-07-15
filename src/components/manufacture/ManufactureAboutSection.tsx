@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import Banner from "@/assets/aboutus.webp";
+import About from "@/assets/about_sub_1.webp";
+
 const checkLists = [
   {
     id: 1,
@@ -7,55 +8,57 @@ const checkLists = [
   },
   {
     id: 2,
-    name: "Nguyên liệu đạt tiêu chuẩn an toàn cho da",
+    name: "Vải đầu vào kiểm định độ bền màu, độ co giãn",
   },
   {
     id: 3,
-    name: "Tuân thủ quy trình VSATTP nghiêm ngặt",
+    name: "Tuân thủ quy trình may đo chuẩn xuất khẩu",
   },
   {
     id: 4,
-    name: "Kiểm soát chất lượng từng lô hàng",
+    name: "Kiểm soát chất lượng từng đường may",
   },
   {
     id: 5,
-    name: "Sản xuất đúng kích thước, đúng định lượng",
+    name: "Sản xuất đúng size, đúng số đo yêu cầu",
   },
   {
     id: 6,
-    name: "Sử dụng nước tinh khiết RO đa tầng lọc",
+    name: "Hệ thống máy cắt, may công nghiệp hiện đại",
   },
 ];
 
 const ManufactureAboutSection = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-10 sm:py-12 md:py-16 bg-[#f0fdf4] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="py-24 sm:py-12 md:py-16 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-primary font-semibold text-base uppercase tracking-wider">
               Về sản xuất
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-black mt-2 mb-6 reveal reveal-in">
-              Nhà Máy Sản Xuất Hiện Đại
+              Xưởng May Đồng Phục Hiện Đại
             </h2>
             <p className="text-black text-justify leading-relaxed mb-4 reveal reveal-in">
-              Vua Khăn Lạnh sở hữu nhà máy sản xuất tại TP.HCM với dây chuyền tự
-              động hóa hoàn toàn. Công suất đạt hàng triệu khăn mỗi tháng, đáp
-              ứng nhu cầu cho mọi đối tượng khách hàng từ cá nhân đến doanh
-              nghiệp lớn.
+              Aurix Uniforms sở hữu xưởng may tại TP.HCM với hệ thống máy cắt,
+              may công nghiệp hiện đại. Công suất đạt hàng nghìn bộ đồng phục
+              mỗi tháng, đáp ứng nhu cầu từ cửa hàng nhỏ đến chuỗi doanh nghiệp,
+              nhà hàng, khách sạn quy mô lớn.
             </p>
             <p className="text-black text-justify leading-relaxed mb-4 reveal reveal-in">
-              Mỗi sản phẩm khăn lạnh được sản xuất từ nguyên liệu loại 1. Vải bi
-              chất lượng cao kết hợp nước tinh khiết qua công nghệ Nano, hương
-              liệu tự nhiên và hoạt chất GLYCERIN dưỡng ẩm da. Quy trình tẩm
-              hương với tỷ lệ 99,5% nước và 0,5% phụ gia, chất bảo quản an toàn.
+              Mỗi bộ đồng phục được may từ chất liệu vải loại 1 — Kate, Kaki,
+              Cotton co giãn 4 chiều tùy theo mục đích sử dụng. Vải đầu vào được
+              kiểm định kỹ về độ bền màu, độ co rút và khả năng thấm hút trước
+              khi đưa vào sản xuất, đảm bảo form dáng ổn định sau nhiều lần
+              giặt.
             </p>
             <p className="text-black text-justify leading-relaxed mb-6 reveal reveal-in">
-              Khăn lạnh sau khi tẩm hương sẽ qua khâu ép nước, cắt và đóng gói
-              tự động. Máy đóng gói bao bì có hệ thống nhiệt dọc và nhiệt ngang
-              để ép bao bì dính kín, đảm bảo vệ sinh và ngăn vi khuẩn xâm nhập.
+              Sau khi lên rập và cắt theo số đo, sản phẩm được may bằng máy công
+              nghiệp với đường chỉ chắc chắn, kiểm tra kỹ từng chi tiết trước
+              khi ủi form và đóng gói. Đội ngũ QC kiểm tra 100% sản phẩm trước
+              khi xuất xưởng, đảm bảo không sai size, không lỗi đường may.
             </p>
             <div className="space-y-3 mb-8">
               {checkLists.map((list) => (
@@ -68,7 +71,7 @@ const ManufactureAboutSection = () => {
               ))}
             </div>
             <button
-              className="inline-flex items-center gap-2 bg-[#16a34a] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#15803d] transition btn-b2b"
+              className="inline-flex items-center cursor-pointer gap-2 bg-primary text-on-primary px-6 py-3 rounded-full font-semibold hover:opacity-95 transition-opacity"
               onClick={() => navigate("/qua-tang")}
             >
               Nhận Báo Giá{" "}
@@ -81,9 +84,9 @@ const ManufactureAboutSection = () => {
             <div className="absolute -bottom-6 -right-6 w-72 h-72 bg-[#f0fdf4] rounded-3xl -z-10"></div>
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl shadow-xl">
               <img
-                alt="Nhà máy sản xuất khăn lạnh"
+                alt="Xưởng may đồng phục Aurix Uniforms"
                 loading="lazy"
-                src={Banner}
+                src={About}
                 className="object-cover w-xl h-108"
               />
             </div>

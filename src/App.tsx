@@ -13,9 +13,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/khan-lanh" element={<ProductLayout />} />
-        <Route path="/san-xuat-khan-lanh" element={<Manufacture />} />
-        <Route path="/cong-ty-khan-lanh" element={<About />} />
+        <Route path="/dong-phuc" element={<ProductLayout />} />
+        <Route path="/san-xuat" element={<Manufacture />} />
+        <Route path="/cong-ty" element={<About />} />
       </Routes>
       <Footer />
     </BrowserRouter>

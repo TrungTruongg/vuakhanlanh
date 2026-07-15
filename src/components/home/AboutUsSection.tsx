@@ -1,96 +1,66 @@
-import AboutMain from "@/assets/aboutus.webp";
-import AboutSub1 from "@/assets/bi.webp";
-import AboutSub2 from "@/assets/alex.webp";
+import AboutSub1 from "@/assets/about_sub_1.webp";
+import AboutSub2 from "@/assets/about_sub_2.webp";
 import { useNavigate } from "react-router-dom";
 
 const AboutUsSection = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <section className="py-24 bg-white">
-        <div className="max-w-300 mx-auto px-8 grid md:grid-cols-2 gap-gutter ">
-          <div>
-            <span className="text-label-caps text-xl text-primary uppercase tracking-widest">
-              Về chúng tôi
-            </span>
-            <h2 className="text-headline-xl font-headline-xl mt-4 mb-6">
-              Khăn Lạnh An Toàn — Uy Tín Với Giá Tốt
-            </h2>
-            <p className="text-body-md text-on-surface-variant leading-relaxed mb-4 sm:mb-6">
-              Vua Khăn Lạnh được thành lập với sứ mệnh cung cấp giải pháp khăn
-              lạnh chất lượng cao, an toàn vệ sinh và giá cả phù hợp cho thị
-              trường Việt Nam. Với hơn 10 năm hoạt động, chúng tôi không ngừng
-              đầu tư vào công nghệ sản xuất hiện đại, mở rộng danh mục từ khăn
-              lạnh dùng một lần đơn giản đến dòng cao cấp in logo, đạt chứng
-              nhận ISO 9001:2015.
+    <section className="py-24 px-margin-desktop overflow-hidden max-w-container-max mx-auto bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+        <div className="md:col-span-5">
+          <div className="font-label-caps text-label-caps text-secondary mb-4">
+            DI SẢN 10 NĂM
+          </div>
+          <h2 className="font-display-lg text-display-lg text-primary mb-8 leading-none">
+            Về chúng tôi
+          </h2>
+          <div className="space-y-6 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            <p>
+              Với hơn một thập kỷ kinh nghiệm trong ngành may mặc, Aurix đã phát
+              triển từ một xưởng may nhỏ thành đối tác chiến lược cho hàng ngàn
+              doanh nghiệp hàng đầu.
             </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-6 sm:mb-8">
-              <div className="flex gap-2 items-start">
-                <span className="material-symbols-outlined text-primary text-4xl">
-                  check_circle
-                </span>
-                Hơn 10 năm kinh nghiệm sản xuất
-              </div>
-
-              <div className="flex gap-2 items-start">
-                <span className="material-symbols-outlined text-primary text-4xl">
-                  check_circle
-                </span>
-                Đạt chứng nhận ISO 9001:2015
-              </div>
-
-              <div className="flex gap-2 items-start">
-                <span className="material-symbols-outlined text-primary text-4xl">
-                  check_circle
-                </span>
-                Nguyên liệu an toàn, thân thiện môi trường
-              </div>
-
-              <div className="flex gap-2 items-start">
-                <span className="material-symbols-outlined text-primary text-4xl">
-                  check_circle
-                </span>
-                Dây chuyền sản xuất hiện đại, tự động hóa
-              </div>
-            </div>
-
-            <button
-              className="cursor-pointer inline-flex items-center gap-2 text-base font-semibold text-black hover:text-[#16a34a] transition"
-              onClick={() => navigate("cong-ty-khan-lanh")}
-            >
-              Xem thêm{" "}
-              <span className="material-symbols-outlined">arrow_forward</span>
-            </button>
+            <p>
+              Chúng tôi hiểu rằng đồng phục không chỉ là trang phục làm việc, mà
+              là ngôn ngữ thị giác mạnh mẽ nhất truyền tải giá trị cốt lõi của
+              một thương hiệu. Mỗi đường kim mũi chỉ đều được thực hiện với sự
+              chính xác tuyệt đối, đảm bảo tính bền vững và thẩm mỹ chuyên
+              nghiệp.
+            </p>
+            <p>
+              Aurix luôn cam kết mang lại giải pháp toàn diện từ khâu tư vấn
+              thiết kế, chọn lọc chất liệu đến quy trình sản xuất khép kín chuẩn
+              quốc tế.
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 h-auto">
-            <div className="rounded-2xl overflow-hidden">
-              <img
-                src={AboutMain}
-                alt="Nhà máy sản xuất khăn lạnh"
-                className="w-full h-105 object-cover"
-              />
-            </div>
-            <div className="grid grid-rows-2 gap-4">
-              <div className="rounded-2xl overflow-hidden">
-                <img
-                  src={AboutSub1}
-                  alt="Sản phẩm khăn lạnh"
-                  className="w-full h-82 object-cover"
-                />
-              </div>
-              <div className="rounded-2xl overflow-hidden">
-                <img
-                  src={AboutSub2}
-                  alt="Sản phẩm khăn lạnh"
-                  className="w-full h-82 object-cover"
-                />
-              </div>
-            </div>
+          <button
+            className="cursor-pointer inline-flex items-center gap-2 text-base font-semibold text-black mt-4 transition"
+            onClick={() => navigate("cong-ty-khan-lanh")}
+          >
+            Xem thêm{" "}
+            <span className="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+        <div className="md:col-span-7 grid grid-cols-2 gap-4">
+          <div className="pt-12">
+            <img
+              className="w-full h-100 object-cover rounded shadow-sm border border-outline-variant"
+              data-alt="A close-up, high-detail macro shot of navy blue wool fabric being precisely cut by automated industrial machinery. The lighting is crisp and cool, highlighting the fine texture of the weave. The scene conveys a sense of technological precision and high-grade material quality in a modern factory setting."
+              src={AboutSub1}
+            />
+          </div>
+          <div>
+            <img
+              className="w-full h-100 object-cover rounded shadow-sm border border-outline-variant"
+              data-alt="A professional fashion designer in a well-lit, modern studio sketching uniform concepts on a digital tablet. Behind them, a wall of premium textile samples in various shades of navy, grey, and gold are neatly organized. The workspace is clean, minimalist, and professional, bathed in natural light."
+              src={AboutSub2}
+            />
           </div>
         </div>
-      </section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default AboutUsSection
+export default AboutUsSection;

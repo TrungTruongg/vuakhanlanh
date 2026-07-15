@@ -1,18 +1,18 @@
 const warnings = [
   {
     id: 1,
-    title: "Kích Ứng Da",
-    des: "Khăn kém chất lượng thường chứa hóa chất không tốt, gây da đỏ, ngứa hoặc phát ban.",
+    title: "Vải Co Rút, Phai Màu",
+    des: "Vải kém chất lượng, không qua xử lý pre-shrink thường bị co rút, bạc màu nhanh chỉ sau vài lần giặt.",
   },
   {
     id: 2,
-    title: "Khô Da",
-    des: "Chứa chất làm khô da, không cung cấp đủ độ ẩm, khiến da mất đàn hồi tự nhiên.",
+    title: "Đường May Lỗi, Bung Chỉ",
+    des: "Xưởng may thiếu kiểm soát chất lượng dễ để lọt sản phẩm bung chỉ, lệch form, ảnh hưởng độ bền khi sử dụng.",
   },
   {
     id: 3,
-    title: "Mất Cân Bằng Da",
-    des: "Thay đổi pH da, gây ra mụn, khô da hoặc tình trạng dầu thừa không mong muốn.",
+    title: "Kích Ứng Da",
+    des: "Vải không rõ nguồn gốc, dư lượng hóa chất nhuộm vượt ngưỡng có thể gây ngứa, mẩn đỏ khi tiếp xúc da lâu.",
   },
 ];
 
@@ -25,12 +25,12 @@ const ManufactureWarningSection = () => {
             Cảnh báo
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-black mt-2">
-            Lưu Ý Nơi Sản Xuất Kém Chất Lượng
+            Lưu Ý Đồng Phục Kém Chất Lượng
           </h2>
           <p className="text-black text-justify mt-3 max-w-3xl mx-auto">
-            Mặc dù là sản phẩm tiện ích nhưng những nơi sản xuất khăn lạnh kém
-            chất lượng có thể gây ra các vấn đề về da. Hãy luôn chọn nhà sản
-            xuất uy tín có chứng nhận an toàn.
+            Mặc dù là sản phẩm sử dụng lâu dài nhưng những xưởng may đồng phục
+            kém chất lượng có thể gây ra nhiều vấn đề về độ bền và an toàn khi
+            mặc. Hãy luôn chọn xưởng may uy tín có quy trình kiểm soát rõ ràng.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6 reveal-stagger">

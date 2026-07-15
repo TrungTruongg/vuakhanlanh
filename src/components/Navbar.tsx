@@ -1,12 +1,11 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import NavLogo from "../assets/nav_logo.webp";
 import { useState } from "react";
 
 const navLinks = [
   { label: "Trang chủ", to: "/" },
-  { label: "Khăn Lạnh", to: "/khan-lanh" },
-  { label: "Sản Xuất", to: "/san-xuat-khan-lanh" },
-  { label: "Về Chúng Tôi", to: "/cong-ty-khan-lanh" },
+  { label: "Đồng Phục", to: "/dong-phuc" },
+  { label: "Sản Xuất", to: "/san-xuat" },
+  { label: "Về Chúng Tôi", to: "/cong-ty" },
   { label: "Blog", to: "/blog" },
   { label: "Liên Hệ", to: "/lien-he" },
 ];
@@ -16,7 +15,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <>
-      <div className="text-xs hidden md:block bg-[#4D835F] text-white">
+      <div className="text-xs hidden md:block bg-tertiary-container text-white">
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
@@ -25,20 +24,16 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined">email</span>
-              vuakhanlanh@gmail.com
+              aurixuniform@gmail.com
             </div>
           </div>
           <div className="text-white">Thứ 2 - Thứ 7: 08h - 18h</div>
         </div>
       </div>
-      <header className="sticky top-0 z-50 shadow-sm bg-white/95 backdrop-blur-md border-b border-gray-100">
+      <header className="sticky top-0 z-50 shadow-sm bg-primary dark:bg-primary-container">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between py-3">
-          <a href="/" className="flex items-center gap-2">
-            <img
-              src={NavLogo}
-              alt="Vua Khăn Lạnh Logo"
-              className="h-12 w-auto object-contain invert mix-blend-multiply"
-            />
+          <a href="/" className="text-headline-md font-headline-md font-bold text-white">
+            Aurix Uniforms
           </a>
           <nav className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
@@ -47,8 +42,8 @@ const Navbar = () => {
                 to={link.to}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary pb-1"
-                    : "text-on-surface dark:text-on-surface-variant hover:text-primary transition-colors"
+                    ? "text-label-caps font-label-caps border-b-2 border-secondary-container text-white pb-1 transition-colors duration-200"
+                    : "text-label-caps font-label-caps text-on-primary/80 dark:text-on-primary-fixed/80 hover:text-secondary-container transition-colors duration-200"
                 }
               >
                 {link.label}
@@ -57,7 +52,7 @@ const Navbar = () => {
           </nav>
 
           <div className="flex items-center gap-3">
-            <button className="hidden sm:inline-flex font-semibold text-xs transition-all bg-[#4D835F] text-white px-5 py-2.5 rounded-3xl hover:shadow-lg hover:shadow-[#4D835F]/25">
+            <button className="hidden sm:inline-flex bg-white text-black cursor-pointer font-label-caps px-6 py-2 rounded-3xl scale-95 active:scale-90 transition-transform">
               Nhận báo giá
             </button>
 

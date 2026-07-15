@@ -7,14 +7,14 @@ const benefits = [
 
 export default function AgentProgramSection() {
   return (
-    <section className="py-24 bg-surface-mint">
-      <div className="max-w-300 mx-auto px-8 grid md:grid-cols-2 gap-gutter items-center">
+    <section className="py-24 px-margin-desktop overflow-hidden">
+      <div className="max-w-container-max mx-auto px-8 grid md:grid-cols-2 gap-gutter items-center">
         <div>
-          <span className="font-label-caps text-label-caps text-primary tracking-widest">
+          <span className="font-display-lg text-display-lg text-primary">
             Hệ thống phân phối
           </span>
           <h2 className="text-headline-xl font-headline-xl mt-4 mb-6">
-            Trở Thành Đại Lý Vua Khăn Lạnh
+            Trở Thành Đại Lý Aurix Uniforms
           </h2>
           <p className="text-body-md text-on-surface-variant mb-8">
             Với thương hiệu khẳng định qua hơn 10 năm, chứng nhận ISO 9001:2015 và

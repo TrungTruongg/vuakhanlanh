@@ -7,10 +7,10 @@ const steps = [
 
 export default function OrderProcessSection() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-300 mx-auto px-8">
+    <section className="py-24 bg-white px-margin-desktop overflow-hidden">
+      <div className="max-w-container-max mx-auto">
         <div className="text-center mb-16">
-          <span className="font-label-caps text-label-caps text-primary tracking-widest">Phân phối</span>
+          <span className="font-display-lg text-display-lg text-primary">Phân phối</span>
           <h2 className="text-headline-xl font-headline-xl mt-4">
             Đặt Hàng Khăn Lạnh Sỉ — Giao Toàn Quốc
           </h2>

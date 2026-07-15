@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  display: inline-block;
+  vertical-align: middle;
+} */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fa;
+}
+.text-headline-md {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.text-label-caps {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+.bento-item {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.bento-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
+.animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+.step-card:hover .step-number {
+  transform: translateY(-4px);
+  background-color: #735c00;
+  color: white;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
