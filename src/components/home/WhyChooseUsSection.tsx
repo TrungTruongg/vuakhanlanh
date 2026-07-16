@@ -10,42 +10,44 @@ const reasons = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="bg-surface-container py-24 px-margin-desktop">
-      <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-surface-container py-12 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
+      <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
         <div>
-         <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">
+          <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest text-xs sm:text-sm">
             Sự Khác Biệt Của Aurix
           </span>
-          <h2 className="font-display-lg text-display-lg text-primary mt-2 mb-8">
+          <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mt-2 mb-6 sm:mb-8">
             Tại Sao Nên Chọn Chúng Tôi?
           </h2>
-
-          <div className="space-y-8">
+ 
+          <div className="space-y-6 sm:space-y-8">
             {reasons.map((reason) => (
-              <div key={reason} className="flex items-center gap-5">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-white">
+              <div key={reason} className="flex items-center gap-4 sm:gap-5">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-white text-xl sm:text-2xl">
                     check_circle
                   </span>
                 </div>
-                <p className="text-on-surface-variant">{reason}</p>
+                <p className="text-sm sm:text-base text-on-surface-variant">
+                  {reason}
+                </p>
               </div>
             ))}
           </div>
         </div>
-
-        <div className="relative">
+ 
+        <div className="relative pb-16 sm:pb-0">
           <img
             src={WhyChooseUs}
-            className="aspect-square bg-cover bg-center rounded-lg shadow-2xl"
-            data-alt="A close-up high-definition shot of a professional tailor's hands precisely cutting high-end navy blue wool fabric with large silver shears. The workspace is a minimalist, well-lit studio with rolls of premium textiles in the background. The lighting is focused and warm, emphasizing craftsmanship, precision, and the 'Tailored Excellence' brand identity."
+            className="aspect-square w-full object-cover rounded-lg shadow-2xl"
+            alt="Thợ may cắt vải wool navy bằng kéo chuyên dụng"
           />
-          <div className="absolute -bottom-8 -left-8 bg-white p-8 shadow-xl border border-outline-variant max-w-xs">
-            <div className="text-display-lg text-primary">98%</div>
-            <p className="font-label-caps text-secondary">
+          <div className="absolute bottom-0 left-4 right-4 sm:left-auto sm:right-auto sm:-bottom-8 bg-white p-5 sm:p-8 shadow-xl border border-outline-variant sm:max-w-xs">
+            <div className="text-2xl sm:text-display-lg text-primary">98%</div>
+            <p className="text-xs sm:text-sm font-label-caps text-secondary">
               Khách hàng hài lòng
             </p>
-            <p className="text-body-md text-on-surface-variant mt-2 italic">
+            <p className="text-xs sm:text-sm text-on-surface-variant mt-2 italic">
               "Chất lượng vải tuyệt vời, đường may rất chắc chắn và form dáng
               chuẩn."
             </p>

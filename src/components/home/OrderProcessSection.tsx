@@ -7,23 +7,29 @@ const steps = [
 
 export default function OrderProcessSection() {
   return (
-    <section className="py-24 bg-white px-margin-desktop overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 bg-white px-margin-mobile md:px-margin-desktop overflow-hidden">
       <div className="max-w-container-max mx-auto">
-        <div className="text-center mb-16">
-          <span className="font-display-lg text-display-lg text-primary">Phân phối</span>
-          <h2 className="text-headline-xl font-headline-xl mt-4">
-            Đặt Hàng Khăn Lạnh Sỉ — Giao Toàn Quốc
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest text-xs sm:text-sm">
+            Phân phối
+          </span>
+          <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-black mt-2 sm:mt-4 mb-3 sm:mb-4">
+            Đặt May Đồng Phục Sỉ — Giao Toàn Quốc
           </h2>
         </div>
-
-        <div className="grid md:grid-cols-4 gap-gutter">
+ 
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-gutter">
           {steps.map((step) => (
             <div key={step.num} className="relative">
-              <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg mb-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-base sm:text-lg mb-3 sm:mb-4">
                 {step.num}
               </div>
-              <h4 className="text-headline-sm font-headline-sm mb-2">{step.title}</h4>
-              <p className="text-body-sm text-on-surface-variant">{step.desc}</p>
+              <h4 className="text-sm sm:text-base font-headline-sm mb-1.5 sm:mb-2">
+                {step.title}
+              </h4>
+              <p className="text-xs sm:text-sm text-on-surface-variant">
+                {step.desc}
+              </p>
             </div>
           ))}
         </div>

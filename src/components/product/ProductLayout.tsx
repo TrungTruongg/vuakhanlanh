@@ -1,15 +1,15 @@
 import FAQSection from "../home/FAQSection";
 import ProductCategorySection from "./ProductCategorySection";
 import ProductDisplaySection from "./ProductDisplaySection.tsx";
-import ProductComponentsSection from "./ProductMaterialSection.tsx";
+import ProductMaterialSection from "./ProductMaterialSection.tsx.tsx";
 import ReferenceDocumentsSection from "./ReferenceDocumentsSection";
 
 const ProductLayout = () => {
   return (
-    <main className="min-h-screen">      
+    <main className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-auto sm:py-12 md:py-16">
       <ProductCategorySection />
       <ProductDisplaySection />
-      <ProductComponentsSection />
+      <ProductMaterialSection />
       <FAQSection />
       <ReferenceDocumentsSection />
     </main>

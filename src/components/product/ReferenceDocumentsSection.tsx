@@ -39,12 +39,12 @@ const documents = [
 
 const ReferenceDocumentsSection = () => {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-4xl mx-auto px-4 reveal reveal-in">
-        <h3 className="text-xl font-semibold text-black mb-4 reveal reveal-in">
+    <section className="mb-16 sm:mb-24">
+      <div className="max-w-4xl mx-auto reveal reveal-in">
+        <h3 className="text-lg sm:text-xl font-semibold text-black mb-3 sm:mb-4 reveal reveal-in">
           Tài Liệu Tham Khảo
         </h3>
-        <ul className="space-y-2 text-base text-black">
+        <ul className="space-y-2 text-sm sm:text-base text-black">
           {documents.map((doc) => (
             <li key={doc.id}>
               <span className="text-black mr-2">[{doc.id}]</span>
@@ -52,7 +52,7 @@ const ReferenceDocumentsSection = () => {
                 href={doc.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#16a34a] underline hover:text-[#15803d]"
+                className="text-secondary underline"
               >
                 {doc.title}
               </a>{" "}

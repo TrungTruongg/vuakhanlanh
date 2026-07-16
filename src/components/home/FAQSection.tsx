@@ -37,27 +37,27 @@ const faqs = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+ 
   return (
-    <section className="py-24 px-margin-desktop overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
       <div className="max-w-container-max mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-display-lg text-display-lg mb-4 text-on-surface">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-3 sm:mb-4 text-on-surface">
             Câu Hỏi Thường Gặp
           </h2>
         </div>
-
-        <div className="max-w-3xl mx-auto space-y-4">
+ 
+        <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
           {faqs.map((faq, i) => (
             <div
               key={faq.q}
               className="bg-white rounded-xl border border-border-subtle overflow-hidden"
             >
               <button
-                className="w-full flex justify-between items-center p-6 text-left"
+                className="w-full flex justify-between items-center gap-3 p-4 sm:p-6 text-left"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="font-headline-sm text-headline-sm pr-4">
+                <span className="text-sm sm:text-base font-headline-sm pr-2 sm:pr-4">
                   {faq.q}
                 </span>
                 <span className="material-symbols-outlined text-primary shrink-0">
@@ -65,10 +65,8 @@ export default function FAQSection() {
                 </span>
               </button>
               {openIndex === i && (
-                <div className="px-6 pb-6">
-                  <p className="text-body-sm text-on-surface-variant">
-                    {faq.a}
-                  </p>
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6">
+                  <p className="text-sm text-on-surface-variant">{faq.a}</p>
                 </div>
               )}
             </div>

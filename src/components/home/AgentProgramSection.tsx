@@ -10,35 +10,43 @@ const benefits = [
 export default function AgentProgramSection() {
   const navigate = useNavigate();
   return (
-    <section className="py-24 px-margin-desktop overflow-hidden">
-      <div className="max-w-container-max mx-auto px-8 grid md:grid-cols-2 gap-gutter items-center">
+    <section className="py-12 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+      <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-gutter items-center">
         <div>
-          <span className="font-display-lg text-display-lg text-primary">
+          <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest text-xs sm:text-sm">
             Hệ thống phân phối
           </span>
-          <h2 className="text-headline-xl font-headline-xl mt-4 mb-6">
+          <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-black mt-2 sm:mt-4 mb-3 sm:mb-4">
             Trở Thành Đại Lý Aurix Uniforms
           </h2>
-          <p className="text-body-md text-on-surface-variant mb-8">
-            Với thương hiệu khẳng định qua hơn 10 năm, chứng nhận ISO 9001:2015 và
-            mạng lưới khách hàng rộng khắp, đại lý có lợi thế lớn trong tiếp cận khách hàng.
+          <p className="text-sm sm:text-base text-on-surface-variant mb-6 sm:mb-8">
+            Với thương hiệu khẳng định qua hơn 10 năm, chứng nhận ISO 9001:2015
+            và mạng lưới khách hàng rộng khắp, đại lý có lợi thế lớn trong tiếp
+            cận khách hàng.
           </p>
           <button
             onClick={() => navigate("/dai-ly")}
-            className="inline-block bg-primary text-on-primary px-8 py-4 rounded-lg font-headline-sm hover:opacity-95 transition-opacity"
+            className="w-full sm:w-auto inline-block bg-primary text-on-primary px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg font-headline-sm hover:opacity-95 transition-opacity text-center"
           >
             Tìm Hiểu Chương Trình Đại Lý
           </button>
         </div>
-
-        <div className="grid grid-cols-2 gap-4">
+ 
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
           {benefits.map((b) => (
-            <div key={b.title} className="bg-white p-6 rounded-xl border border-outline-variant">
-              <span className="material-symbols-outlined text-primary text-3xl mb-3">
+            <div
+              key={b.title}
+              className="bg-white p-4 sm:p-6 rounded-xl border border-outline-variant"
+            >
+              <span className="material-symbols-outlined text-primary text-2xl sm:text-3xl mb-2 sm:mb-3 block">
                 {b.icon}
               </span>
-              <h4 className="text-body-md font-bold mb-2">{b.title}</h4>
-              <p className="text-body-sm text-on-surface-variant">{b.desc}</p>
+              <h4 className="text-sm sm:text-base font-bold mb-1.5 sm:mb-2">
+                {b.title}
+              </h4>
+              <p className="text-xs sm:text-sm text-on-surface-variant">
+                {b.desc}
+              </p>
             </div>
           ))}
         </div>

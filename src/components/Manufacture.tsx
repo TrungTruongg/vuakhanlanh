@@ -9,7 +9,7 @@ import Hero from "@/assets/hero_sanxuat.webp"
 const Manufacture = () => {
   return (
     <main className="min-h-screen">
-      <section className="relative h-[70vh] flex items-center overflow-hidden">
+      <section className="relative h-[70vh] flex items-center overflow-hidden py-10 sm:py-12 md:py-16">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0"
@@ -23,10 +23,10 @@ const Manufacture = () => {
             <span className="text-label-caps font-label-caps bg-secondary px-3 py-1 mb-6 inline-block">
               TIÊU CHUẨN XUẤT KHẨU
             </span>
-            <h1 className="font-display-lg text-display-lg mb-6">
+            <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-4 sm:mb-6 leading-tight">
               Quy Trình Sản Xuất May Mặc Tiêu Chuẩn
             </h1>
-            <p className="font-body-lg text-body-lg opacity-90 border-l-4 border-secondary-container pl-6">
+            <p className="font-body-lg text-body-lg opacity-90 border-l-4 border-secondary-container max-w-2xl pl-6 md:text-lg lg:text-xl xl:text-2xl">
               Tại Aurix, mỗi sản phẩm đồng phục là kết tinh của quy trình sản
               xuất khép kín, ứng dụng công nghệ hiện đại và sự tỉ mỉ của những
               thợ may lành nghề nhất.

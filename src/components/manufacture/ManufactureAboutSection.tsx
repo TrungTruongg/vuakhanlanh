@@ -31,8 +31,8 @@ const checkLists = [
 const ManufactureAboutSection = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-24 sm:py-12 md:py-16 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-24 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">

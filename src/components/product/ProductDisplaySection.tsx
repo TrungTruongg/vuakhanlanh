@@ -75,20 +75,22 @@ const ProductCard = ({ tier, series, title, description, image }: Product) => (
         style={{ backgroundImage: `url('${image}')` }}
       />
       <div
-        className={`absolute top-4 left-4 px-3 py-1 text-label-caps font-label-caps font-bold ${tierBadgeClass[tier]}`}
+        className={`absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 sm:px-3 py-1 text-[10px] sm:text-label-caps font-label-caps font-bold ${tierBadgeClass[tier]}`}
       >
         {tierLabel[tier]}
       </div>
     </div>
-    <div className="p-6">
-      <p className="text-label-caps font-label-caps text-outline mb-1">
+    <div className="p-5 sm:p-6">
+      <p className="text-label-caps font-label-caps text-outline mb-1 text-xs sm:text-sm">
         {series}
       </p>
-      <h3 className="font-headline-md text-headline-md text-primary mb-2">
+      <h3 className="text-lg sm:text-xl font-headline-md text-primary mb-2">
         {title}
       </h3>
-      <p className="text-body-md text-on-surface-variant mb-4">{description}</p>
-      <button className="w-full py-3 border-2 border-primary text-primary font-label-caps text-label-caps hover:bg-primary hover:text-white transition-colors">
+      <p className="text-sm sm:text-base text-on-surface-variant mb-4">
+        {description}
+      </p>
+      <button className="w-full py-2.5 sm:py-3 border-2 border-primary text-primary text-xs sm:text-sm font-label-caps hover:bg-primary hover:text-white transition-colors">
         Xem Chi Tiết
       </button>
     </div>
@@ -98,25 +100,25 @@ const ProductCard = ({ tier, series, title, description, image }: Product) => (
 const ProductDisplaySection = () => {
   const navigate = useNavigate();
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter pb-24 px-margin-desktop">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-gutter mb-16 sm:mb-24">
       {products.map((product) => (
         <ProductCard key={product.title} {...product} />
       ))}
 
-      <div className="bg-primary-container text-white p-8 flex flex-col justify-center items-start">
-        <span className="material-symbols-outlined text-4xl text-secondary-container mb-6">
+      <div className="bg-primary-container text-white p-6 sm:p-8 flex flex-col justify-center items-start">
+        <span className="material-symbols-outlined text-3xl sm:text-4xl text-secondary-container mb-4 sm:mb-6">
           design_services
         </span>
-        <h3 className="font-display-lg text-headline-md mb-4 text-white">
+        <h3 className="text-lg sm:text-xl font-display-lg mb-3 sm:mb-4 text-white">
           Bạn cần thiết kế riêng?
         </h3>
-        <p className="text-body-md text-on-primary-container mb-8">
+        <p className="text-sm sm:text-base text-on-primary-container mb-6 sm:mb-8">
           Chúng tôi cung cấp giải pháp đồng phục toàn diện từ lên ý tưởng, chọn
           vải đến sản xuất hàng loạt.
         </p>
         <button
           onClick={() => navigate("/lien-he")}
-          className="px-8 py-3 bg-white text-primary cursor-pointer font-bold text-label-caps rounded hover:bg-secondary-container transition-colors"
+          className="w-full sm:w-auto px-6 sm:px-8 py-3 bg-white text-primary cursor-pointer font-bold text-xs sm:text-sm rounded hover:bg-secondary-container transition-colors"
         >
           Liên Hệ Ngay
         </button>

@@ -46,33 +46,34 @@ const processes = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-24 px-margin-desktop overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
       <div className="max-w-container-max mx-auto">
-        <div className="text-center mb-16">
-          <span className="font-display-lg text-display-lg text-primary">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest text-xs sm:text-sm">
             THE AURIX STANDARD
           </span>
-          <h2 className="text-headline-xl font-headline-xl mt-4">
-            Quy Trình Sản Xuất Chuẩn Vệ Sinh
+          <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-black mt-2 sm:mt-4 mb-3 sm:mb-4">
+            Quy Trình May Đo Chuẩn Xuất Khẩu
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-gutter">
           {processes.map((process) => (
             <div
               key={process.id}
-              className="step-card bg-surface-container-lowest cursor-pointer border border-outline-variant p-8 transition-all hover:shadow-xl group"
+              className="step-card bg-surface-container-lowest cursor-pointer border border-outline-variant p-6 sm:p-8 transition-all hover:shadow-xl group"
             >
-              <div className="step-number w-12 h-12 flex items-center justify-center border-2 border-secondary text-secondary font-bold mb-6 transition-colors">
+              <div className="step-number w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-secondary text-secondary font-bold mb-4 sm:mb-6 transition-colors text-sm sm:text-base">
                 0{process.id}
               </div>
-              <h3 className="font-headline-md text-headline-md mb-4">
+              <h3 className="text-lg sm:text-xl font-headline-md mb-2 sm:mb-4">
                 {process.title}
               </h3>
-              <p className="text-on-surface-variant mb-6">{process.desc}</p>
-              <div className="h-48 w-full bg-surface-container overflow-hidden">
+              <p className="text-sm sm:text-base text-on-surface-variant mb-4 sm:mb-6">
+                {process.desc}
+              </p>
+              <div className="h-40 sm:h-48 w-full bg-surface-container overflow-hidden rounded">
                 <img
                   className="w-full h-full object-cover transition-all duration-500"
-                  data-alt="A professional fashion designer working in a brightly lit, minimalist studio. They are sketching uniform concepts on a large digital tablet while physical fabric swatches in navy and charcoal gray are neatly arranged on a white table. The scene conveys creativity, technical precision, and a premium corporate aesthetic with soft, natural light."
                   src={process.img}
                   alt={process.title}
                 />

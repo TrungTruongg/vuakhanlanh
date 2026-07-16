@@ -27,14 +27,14 @@ const details = [
 
 const ManufactureProcessDetail = () => {
   return (
-    <section className="py-24 bg-white relative">
-      <div className="max-w-4xl mx-auto px-4">
+    <section className="py-24 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-white relative">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-6 sm:mb-8 md:mb-10">
           <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">
             Quy trình chi tiết
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-black mt-2">
-            Quy Trình Sản Xuất 9 Bước
+            Quy Trình Sản Xuất 6 Bước
           </h2>
           <p className="text-black text-center mt-3 max-w-3xl mx-auto">
             Công ty Aurix Uniforms không chỉ chú trọng tạo ra sản phẩm hiệu quả mà

@@ -7,18 +7,18 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-24 px-margin-desktop overflow-hidden">
-      <div className="max-w-container-max mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+    <section className="py-12 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+      <div className="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-gutter text-center">
         {stats.map((stat) => (
-          <div key={stat.label} className="space-y-3">
-            <span className="material-symbols-outlined text-secondary font-bold text-3xl">
+          <div key={stat.label} className="space-y-2 sm:space-y-3">
+            <span className="material-symbols-outlined text-secondary font-bold text-2xl sm:text-3xl">
               {stat.icon}
             </span>
-
-            <p className="text-display-lg font-display-xl text-on-surface">
+ 
+            <p className="text-2xl sm:text-3xl md:text-display-lg font-display-xl text-on-surface">
               {stat.value}
             </p>
-            <p className="font-label-md text-on-surface-variant">
+            <p className="text-xs sm:text-sm font-label-md text-on-surface-variant">
               {stat.label}
             </p>
           </div>

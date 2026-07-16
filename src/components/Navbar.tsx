@@ -61,7 +61,7 @@ const Navbar = () => {
               className="lg:hidden p-2 transition rounded-lg hover:bg-gray-100"
               aria-label="Mở menu"
             >
-              <span className="material-symbols-outlined">
+              <span className="material-symbols-outlined text-white">
                 {mobileOpen ? "close" : "menu"}
               </span>
             </button>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   navigate("/qua-tang");
                   setMobileOpen(false);
                 }}
-                className="w-full flex items-center justify-center gap-2 bg-[#4D835F] text-white font-semibold py-3.5 rounded-3xl"
+                className="w-full flex items-center justify-center gap-2 bg-secondary text-white font-semibold py-3.5 rounded-3xl"
               >
                 Nhận Báo Giá
               </button>
