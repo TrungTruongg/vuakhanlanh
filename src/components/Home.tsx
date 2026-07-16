@@ -13,6 +13,7 @@ import OrderProcessSection from "@/components/home/OrderProcessSection";
 import AgentProgramSection from "@/components/home/AgentProgramSection";
 import FAQSection from "@/components/home/FAQSection";
 import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
+import { useNavigate } from "react-router-dom";
 // import ProductLinesSection from "@/components/home/ProductLinesSection";
 
 // const images = Object.values(
@@ -79,6 +80,7 @@ import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
 // ];
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <main className="min-h-screen">
       <section className="relative w-full h-[85vh]  flex items-center">
@@ -104,10 +106,10 @@ const Home = () => {
             nghiệp cho đội ngũ của bạn.
           </p>
           <div className="flex gap-4">
-            <button className="bg-white text-primary font-label-caps px-8 py-4 rounded shadow-lg cursor-pointer hover:bg-secondary-container transition-all">
+            <button onClick={() => navigate("/san-pham")} className="bg-white text-primary font-bold font-label-caps px-8 py-4 rounded shadow-lg cursor-pointer hover:bg-secondary-container transition-all">
               Xem Sản Phẩm
             </button>
-            <button className="border-2 border-white text-white font-label-caps px-8 py-4 rounded cursor-pointer transition-all">
+            <button onClick={() => navigate("/lien-he")} className="border-2 border-white text-white font-label-caps px-8 py-4 rounded cursor-pointer transition-all">
               Tư Vấn Ngay
             </button>
           </div>

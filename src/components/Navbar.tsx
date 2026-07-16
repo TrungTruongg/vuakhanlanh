@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Trang chủ", to: "/" },
-  { label: "Đồng Phục", to: "/dong-phuc" },
-  { label: "Sản Xuất", to: "/san-xuat" },
+  { label: "Sản phẩm", to: "/san-pham" },
+  { label: "Quy trình", to: "/quy-trinh" },
   { label: "Về Chúng Tôi", to: "/cong-ty" },
   { label: "Blog", to: "/blog" },
   { label: "Liên Hệ", to: "/lien-he" },

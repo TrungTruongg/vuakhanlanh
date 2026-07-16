@@ -115,7 +115,7 @@ const ProductDisplaySection = () => {
           vải đến sản xuất hàng loạt.
         </p>
         <button
-          onClick={() => navigate("/contact")}
+          onClick={() => navigate("/lien-he")}
           className="px-8 py-3 bg-white text-primary cursor-pointer font-bold text-label-caps rounded hover:bg-secondary-container transition-colors"
         >
           Liên Hệ Ngay

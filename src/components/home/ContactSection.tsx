@@ -17,7 +17,7 @@ const ContactSection = () => {
               Họ và Tên
             </label>
             <input
-              className="w-full bg-surface-container-low border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
+              className="w-full bg-white border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
               placeholder="Nhập tên của bạn"
               type="text"
             />
@@ -27,7 +27,7 @@ const ContactSection = () => {
               Số Điện Thoại
             </label>
             <input
-              className="w-full bg-surface-container-low border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
+              className="w-full bg-white border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
               placeholder="090x xxx xxx"
               type="tel"
             />
@@ -38,7 +38,7 @@ const ContactSection = () => {
             Email Doanh Nghiệp
           </label>
           <input
-            className="w-full bg-surface-container-low border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
+            className="w-full bg-white border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
             placeholder="example@company.com"
             type="email"
           />
@@ -48,7 +48,7 @@ const ContactSection = () => {
             Nội Dung Cần Tư Vấn
           </label>
           <textarea
-            className="w-full bg-surface-container-low border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
+            className="w-full bg-white border border-outline/30 rounded px-4 py-3 focus:outline-none focus:border-primary text-on-surface placeholder:text-on-surface-variant/50"
             placeholder="Số lượng, loại đồng phục, yêu cầu đặc biệt..."
             rows={4}
           ></textarea>

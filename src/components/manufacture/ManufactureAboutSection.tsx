@@ -35,7 +35,7 @@ const ManufactureAboutSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-primary font-semibold text-base uppercase tracking-wider">
+            <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">
               Về sản xuất
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-black mt-2 mb-6 reveal reveal-in">

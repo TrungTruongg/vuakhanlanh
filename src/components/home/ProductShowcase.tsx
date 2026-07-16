@@ -1,13 +1,13 @@
-import DP1 from "@/assets/dp1.webp";
-import DP2 from "@/assets/dp2.webp";
-import DP3 from "@/assets/dp3.webp";
-import DP4 from "@/assets/dp4.webp";
+import DP1 from "@/assets/dongphuc_1.webp";
+import DP2 from "@/assets/dongphuc_2.webp";
+import DP3 from "@/assets/dongphuc_3.webp";
+import DP4 from "@/assets/dongphuc_4.webp";
 
 export default function ProductShowcase() {
   return (
     <section className="py-24 px-margin-desktop max-w-container-max mx-auto">
       <div className="text-center mb-16">
-        <span className="text-label-caps text-secondary font-semibold">
+        <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">
           Giải Pháp Của Chúng Tôi
         </span>
         <h2 className="font-display-lg text-display-lg text-primary mt-2">

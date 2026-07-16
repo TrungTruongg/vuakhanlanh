@@ -13,7 +13,7 @@ export default function WhyChooseUsSection() {
     <section className="bg-surface-container py-24 px-margin-desktop">
       <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
-          <span className="text-label-caps text-secondary font-semibold">
+         <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">
             Sự Khác Biệt Của Aurix
           </span>
           <h2 className="font-display-lg text-display-lg text-primary mt-2 mb-8">

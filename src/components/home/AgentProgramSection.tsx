@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const benefits = [
   { icon: "trending_up", title: "Chiết khấu theo sản lượng", desc: "Mức chiết khấu hấp dẫn, tăng dần theo sản lượng đặt hàng mỗi tháng." },
   { icon: "campaign", title: "Hỗ trợ marketing & tài liệu", desc: "Catalogue, mẫu sản phẩm, hình ảnh chất lượng cao hỗ trợ bán hàng hiệu quả." },
@@ -6,6 +8,7 @@ const benefits = [
 ];
 
 export default function AgentProgramSection() {
+  const navigate = useNavigate();
   return (
     <section className="py-24 px-margin-desktop overflow-hidden">
       <div className="max-w-container-max mx-auto px-8 grid md:grid-cols-2 gap-gutter items-center">
@@ -20,17 +23,17 @@ export default function AgentProgramSection() {
             Với thương hiệu khẳng định qua hơn 10 năm, chứng nhận ISO 9001:2015 và
             mạng lưới khách hàng rộng khắp, đại lý có lợi thế lớn trong tiếp cận khách hàng.
           </p>
-          <a
-            href="/dai-ly-khan-lanh"
+          <button
+            onClick={() => navigate("/dai-ly")}
             className="inline-block bg-primary text-on-primary px-8 py-4 rounded-lg font-headline-sm hover:opacity-95 transition-opacity"
           >
             Tìm Hiểu Chương Trình Đại Lý
-          </a>
+          </button>
         </div>
 
         <div className="grid grid-cols-2 gap-4">
           {benefits.map((b) => (
-            <div key={b.title} className="bg-white p-6 rounded-xl border border-border-subtle">
+            <div key={b.title} className="bg-white p-6 rounded-xl border border-outline-variant">
               <span className="material-symbols-outlined text-primary text-3xl mb-3">
                 {b.icon}
               </span>

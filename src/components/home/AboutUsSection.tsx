@@ -8,10 +8,10 @@ const AboutUsSection = () => {
     <section className="py-24 px-margin-desktop overflow-hidden max-w-container-max mx-auto bg-white">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
         <div className="md:col-span-5">
-          <div className="font-label-caps text-label-caps text-secondary mb-4">
+          <span className="font-label-caps font-semibold text-secondary uppercase tracking-widest">
             DI SẢN 10 NĂM
-          </div>
-          <h2 className="font-display-lg text-display-lg text-primary mb-8 leading-none">
+          </span>
+          <h2 className="font-display-lg text-display-lg text-primary my-4 leading-none">
             Về chúng tôi
           </h2>
           <div className="space-y-6 text-on-surface-variant font-body-md text-body-md leading-relaxed">
@@ -36,7 +36,7 @@ const AboutUsSection = () => {
 
           <button
             className="cursor-pointer inline-flex items-center gap-2 text-base font-semibold text-black mt-4 transition"
-            onClick={() => navigate("cong-ty-khan-lanh")}
+            onClick={() => navigate("cong-ty")}
           >
             Xem thêm{" "}
             <span className="material-symbols-outlined">arrow_forward</span>

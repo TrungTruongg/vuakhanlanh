@@ -27,7 +27,7 @@ const ManufactureWarningSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mt-2">
             Lưu Ý Đồng Phục Kém Chất Lượng
           </h2>
-          <p className="text-black text-justify mt-3 max-w-3xl mx-auto">
+          <p className="text-black text-center mt-3 max-w-3xl mx-auto">
             Mặc dù là sản phẩm sử dụng lâu dài nhưng những xưởng may đồng phục
             kém chất lượng có thể gây ra nhiều vấn đề về độ bền và an toàn khi
             mặc. Hãy luôn chọn xưởng may uy tín có quy trình kiểm soát rõ ràng.
