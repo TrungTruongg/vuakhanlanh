@@ -2,7 +2,7 @@ import Mat from "@/assets/material.webp";
 
 const ProductMaterialSection = () => {
   return (
-    <section className="mb-16 sm:mb-24">
+    <section className="py-10 px-margin-mobile md:px-margin-desktop overflow-hidden">
       <div className="text-center mb-10 sm:mb-16">
         <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-2">
           Chất Liệu &amp; Công Nghệ
@@ -11,7 +11,7 @@ const ProductMaterialSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
         <div className="md:col-span-2 bg-white border border-[#E9ECEF] p-6 sm:p-8">
-          <h4 className="text-lg sm:text-xl font-headline-md text-primary mb-3 sm:mb-4 flex items-center gap-2">
+          <h4 className="sm:text-xl font-bold text-primary mb-3 sm:mb-4 flex items-center gap-2">
             <span className="material-symbols-outlined">check_circle</span>{" "}
             Cotton 100%
           </h4>
@@ -29,7 +29,7 @@ const ProductMaterialSection = () => {
           </div>
         </div>
         <div className="bg-white border border-[#E9ECEF] p-6 sm:p-8">
-          <h4 className="text-lg sm:text-xl font-headline-md text-primary mb-3 sm:mb-4">
+          <h4 className="sm:text-xl font-bold text-primary mb-3 sm:mb-4">
             Vải Kate
           </h4>
           <p className="text-sm sm:text-base text-on-surface-variant">
@@ -38,7 +38,7 @@ const ProductMaterialSection = () => {
           </p>
         </div>
         <div className="bg-white border border-[#E9ECEF] p-6 sm:p-8">
-          <h4 className="text-lg sm:text-xl font-headline-md text-primary mb-3 sm:mb-4">
+          <h4 className="sm:text-xl font-bold text-primary mb-3 sm:mb-4">
             Vải Kaki
           </h4>
           <p className="text-sm sm:text-base text-on-surface-variant">
@@ -48,7 +48,7 @@ const ProductMaterialSection = () => {
         </div>
         <div className="bg-surface-container-high p-6 sm:p-8 md:col-span-4 flex flex-col md:flex-row items-center gap-8 sm:gap-12">
           <div className="md:w-1/2">
-            <h3 className="text-lg sm:text-xl font-headline-md text-primary mb-3 sm:mb-4">
+            <h3 className="sm:text-xl font-bold text-primary mb-3 sm:mb-4">
               Dịch Vụ Tùy Chỉnh Chuyên Nghiệp
             </h3>
             <div className="space-y-4">

@@ -7,21 +7,31 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-24 px-margin-mobile md:px-margin-desktop overflow-hidden">
+    <section className="py-16 px-margin-mobile md:px-margin-desktop overflow-hidden">
       <div className="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-gutter text-center">
         {stats.map((stat) => (
           <div key={stat.label} className="space-y-2 sm:space-y-3">
-            <span className="material-symbols-outlined text-secondary font-bold text-2xl sm:text-3xl">
+            <span className="material-symbols-outlined text-secondary font-bold" style={{ fontSize: "32px"}}>
               {stat.icon}
             </span>
  
-            <p className="text-2xl sm:text-3xl md:text-display-lg font-display-xl text-on-surface">
+            <div className="text-3xl font-bold sm:text-4xl">
               {stat.value}
-            </p>
-            <p className="text-xs sm:text-sm font-label-md text-on-surface-variant">
+            </div>
+            <div className="text-black text-base mt-1">
               {stat.label}
-            </p>
+            </div>
           </div>
+          // <span className="material-symbols-outlined text-secondary font-bold text-3xl">
+          //     {stat.icon}
+          //   </span>
+
+          //   <p className="text-display-lg font-display-xl text-on-surface">
+          //     {stat.value}
+          //   </p>
+          //   <p className="font-label-md text-on-surface-variant">
+          //     {stat.label}
+          //   </p>
         ))}
       </div>
     </section>

@@ -19,7 +19,7 @@ const ProductCategorySection = () => {
               key={cat}
               className={
                 i === 0
-                  ? "px-4 sm:px-6 py-1.5 sm:py-2 bg-primary text-white rounded-lg text-xs sm:text-sm font-label-caps"
+                  ? "px-4 sm:px-6 py-1.5 sm:py-2 bg-primary text-white text-xs sm:text-sm font-label-caps"
                   : "px-4 sm:px-6 py-1.5 sm:py-2 border border-outline-variant hover:border-primary transition-colors text-xs sm:text-sm font-label-caps"
               }
             >

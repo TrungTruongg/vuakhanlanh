@@ -65,7 +65,7 @@ const ProcessSection = () => {
               <div className="step-number w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border-2 border-secondary text-secondary font-bold mb-4 sm:mb-6 transition-colors text-sm sm:text-base">
                 0{process.id}
               </div>
-              <h3 className="text-lg sm:text-xl font-headline-md mb-2 sm:mb-4">
+              <h3 className=" text-black font-bold mb-2 sm:mb-4">
                 {process.title}
               </h3>
               <p className="text-sm sm:text-base text-on-surface-variant mb-4 sm:mb-6">

@@ -44,7 +44,7 @@ export default function CoreValuesSection() {
               <span className="material-symbols-outlined text-secondary font-bold text-3xl sm:text-4xl block mb-3">
                 {v.icon}
               </span>
-              <h3 className="text-lg sm:text-xl font-headline-md mb-2 sm:mb-4">
+              <h3 className="text-headline-md sm:text-xl font-headline-md mb-2 sm:mb-4">
                 {v.title}
               </h3>
               <p className="text-sm sm:text-base text-on-surface-variant">

@@ -84,13 +84,13 @@ const ProductCard = ({ tier, series, title, description, image }: Product) => (
       <p className="text-label-caps font-label-caps text-outline mb-1 text-xs sm:text-sm">
         {series}
       </p>
-      <h3 className="text-lg sm:text-xl font-headline-md text-primary mb-2">
+      <h3 className="text-sm sm:text-base md:text-lg font-bold mb-1 text-black line-clamp-2 leading-snug reveal reveal-in">
         {title}
       </h3>
       <p className="text-sm sm:text-base text-on-surface-variant mb-4">
         {description}
       </p>
-      <button className="w-full py-2.5 sm:py-3 border-2 border-primary text-primary text-xs sm:text-sm font-label-caps hover:bg-primary hover:text-white transition-colors">
+      <button className="w-full py-2.5 sm:py-3 border-2 border-primary cursor-pointer text-primary text-xs sm:text-sm font-label-caps hover:bg-primary hover:text-white transition-colors">
         Xem Chi Tiết
       </button>
     </div>
