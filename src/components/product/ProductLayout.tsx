@@ -1,5 +1,4 @@
 import FAQSection from "../home/FAQSection";
-import StatsSection from "../home/StatsSection";
 import ProductCategorySection from "./ProductCategorySection";
 import ProductDisplaySection from "./ProductDisplaySection.tsx";
 import ProductComponentsSection from "./ProductMaterialSection.tsx";
