@@ -5,8 +5,10 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Manufacture from "@/components/Manufacture";
-import ProductLayout from "./components/product/ProductLayout";
-import ScrollToTop from "./components/ScrollToTop";
+import ProductLayout from "@/components/product/ProductLayout";
+import ScrollToTop from "@/components/ScrollToTop";
+import Contact from "@/components/Contact";
+import Blog from "@/components/Blog";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/san-pham" element={<ProductLayout />} />
         <Route path="/quy-trinh" element={<Manufacture />} />
         <Route path="/cong-ty" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/lien-he" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
