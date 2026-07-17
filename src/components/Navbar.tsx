@@ -35,7 +35,7 @@ const Navbar = () => {
           <a href="/" className="text-headline-md font-headline-md font-bold text-white">
             Aurix Uniforms
           </a>
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}

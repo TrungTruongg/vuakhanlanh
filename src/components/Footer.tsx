@@ -1,4 +1,25 @@
+import { useNavigate } from "react-router-dom";
+
+const exploreLinks = [
+  { label: "Về chúng tôi", to: "/cong-ty-dong-phuc" },
+  { label: "Dự án đã thực hiện", to: "/du-an" },
+  { label: "Bảng giá tham khảo", to: "/bang-gia" },
+  { label: "Blog kỹ thuật may", to: "/blog" },
+];
+
+const legalLinks = [
+  { label: "Chính sách bảo mật", to: "/chinh-sach-bao-mat" },
+  { label: "Điều khoản sử dụng", to: "/dieu-khoan-su-dung" },
+  { label: "Chính sách đổi trả", to: "/chinh-sach-doi-tra" },
+  { label: "Tuyển dụng", to: "/tuyen-dung" },
+];
+
+const linkClass =
+  "text-left text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100 cursor-pointer";
+
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="w-full py-10 sm:py-12 md:py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-gutter bg-surface-container-highest dark:bg-tertiary-container border-t border-outline-variant">
       <div className="col-span-1 sm:col-span-2 md:col-span-1">
@@ -13,58 +34,28 @@ const Footer = () => {
 
       <div className="flex flex-col gap-3 sm:gap-4">
         <h5 className="text-label-caps font-bold">Khám Phá</h5>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="/cong-ty-dong-phuc"
-        >
-          Về chúng tôi
-        </a>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Dự án đã thực hiện
-        </a>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Bảng giá tham khảo
-        </a>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Blog kỹ thuật may
-        </a>
+        {exploreLinks.map((link) => (
+          <button
+            key={link.to}
+            className={linkClass}
+            onClick={() => navigate(link.to)}
+          >
+            {link.label}
+          </button>
+        ))}
       </div>
 
       <div className="flex flex-col gap-3 sm:gap-4">
         <h5 className="text-label-caps font-bold">Pháp Lý</h5>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Chính sách bảo mật
-        </a>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Điều khoản sử dụng
-        </a>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Chính sách đổi trả
-        </a>
-        <a
-          className="text-sm sm:text-base text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline transition-opacity opacity-80 hover:opacity-100"
-          href="#"
-        >
-          Tuyển dụng
-        </a>
+        {legalLinks.map((link) => (
+          <button
+            key={link.to}
+            className={linkClass}
+            onClick={() => navigate(link.to)}
+          >
+            {link.label}
+          </button>
+        ))}
       </div>
 
       <div className="col-span-1 sm:col-span-2 md:col-span-1">

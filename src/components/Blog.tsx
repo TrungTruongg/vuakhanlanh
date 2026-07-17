@@ -3,6 +3,7 @@ import Article2 from "@/assets/blog_2.webp";
 import Article3 from "@/assets/blog_3.webp";
 import Article4 from "@/assets/blog_4.webp";
 import Article5 from "@/assets/blog_5.webp";
+import { useNavigate } from "react-router-dom";
 
 const filters = [
   "Tất cả",
@@ -142,6 +143,7 @@ const ArticleCard = ({
 );
 
 const Blog = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <section className="py-16 md:py-24 bg-white text-center px-4">
@@ -198,13 +200,13 @@ const Blog = () => {
             Liên hệ ngay để nhận tư vấn miễn phí từ đội ngũ chuyên gia về giải
             pháp đồng phục tối ưu.
           </p>
-          <a
-            className="inline-flex gap-2 items-center bg-secondary-container hover:scale-105 text-primary px-10 py-4 rounded font-bold text-lg transition-all shadow-lg"
-            href="/lien-he"
+          <button
+            className="inline-flex cursor-pointer gap-2 items-center bg-secondary-container hover:scale-105 text-primary px-10 py-4 rounded font-bold text-lg transition-all shadow-lg"
+            onClick={() => navigate("/lien-he")}
           >
             Liên Hệ Ngay
             <span className="material-symbols-outlined">arrow_forward</span>
-          </a>
+          </button>
         </div>
       </section>
     </div>
